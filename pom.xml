@@ -16,11 +16,21 @@
 
     <dependencies>
         <!-- 界面库 -->
+<!--        <dependency>-->
+<!--            <groupId>com.formdev</groupId>-->
+<!--            <artifactId>flatlaf</artifactId>-->
+<!--            <version>2.3</version>-->
+<!--        </dependency>-->
+
         <dependency>
             <groupId>com.formdev</groupId>
-            <artifactId>flatlaf</artifactId>
+            <artifactId>flatlaf-demo</artifactId>
             <version>2.3</version>
+<!--            <scope>system</scope>-->
+<!--            <systemPath>/Volumes/Dev/FlatLaf/flatlaf-demo/build/libs/flatlaf-demo-2.4-SNAPSHOT.jar</systemPath>-->
         </dependency>
+
+
 
         <!-- 构建 Intellij IDEA 的窗体设计器需要的依赖 -->
         <dependency>
@@ -40,13 +50,13 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>ideauidesigner-maven-plugin</artifactId>
                 <version>1.0-beta-1</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>javac2</goal>
-                        </goals>
-                    </execution>
-                </executions>
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>javac2</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
                 <configuration>
                     <fork>true</fork>
                     <debug>true</debug>
