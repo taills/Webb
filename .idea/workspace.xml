@@ -6,13 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="58da97d1-2747-4079-bba3-374abadf6f4b" name="Changes" comment="init">
       <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/ShellSetting.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/ShellSetting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/ShellManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/ShellManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/ShellSetting.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/ShellSetting.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/ShellSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/ShellSetting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655102863495</updated>
       <workItem from="1655102865735" duration="30623000" />
-      <workItem from="1655184462436" duration="6173000" />
+      <workItem from="1655184462436" duration="7468000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1655165314845</created>
@@ -109,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655181185341</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="init">
+      <created>1655190953025</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655190953025</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

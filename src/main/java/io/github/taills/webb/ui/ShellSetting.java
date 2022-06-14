@@ -8,12 +8,6 @@ import org.fife.ui.rtextarea.RTextScrollPane;
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import java.awt.*;
-import java.awt.event.InputMethodEvent;
-import java.awt.event.InputMethodListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 
 public class ShellSetting {
     private JTabbedPane tabbedPane1;
@@ -28,8 +22,8 @@ public class ShellSetting {
     private JPanel panelBottom;
     private JButton button1;
     private JButton button2;
-
-    private RTextArea textArea;
+    private RSyntaxTextArea requestTextArea;
+    private RTextScrollPane requestTextScrollPane;
 
     public ShellSetting() {
 
@@ -44,26 +38,13 @@ public class ShellSetting {
         requestPanel = new JPanel(new BorderLayout());
         requestPanel.setBorder(new TitledBorder("Header"));
 
+         requestTextArea = new RSyntaxTextArea(20, 60);
+        requestTextArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_CSS);
+        requestTextArea.setCodeFoldingEnabled(true);
+        requestTextScrollPane = new RTextScrollPane(requestTextArea);
+        requestPanel.add(requestTextScrollPane);
 
-        RSyntaxTextArea textArea = new RSyntaxTextArea(20, 60);
-        textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_CSS);
-        textArea.setCodeFoldingEnabled(true);
-        RTextScrollPane sp = new RTextScrollPane(textArea);
-        requestPanel.add(sp);
 
-
-//        panelBottom = new JPanel();
-//
-//        JButton button = new JButton();
-//        button.setText("OK");
-//        button.putClientProperty("FlatLaf.styleClass", "small");
-//
-//        JButton button1 = new JButton();
-//        button1.setText("Test");
-//        button1.putClientProperty("FlatLaf.styleClass", "small");
-//
-//        panelBottom.add(button);
-//        panelBottom.add(button1);
 
     }
 }
