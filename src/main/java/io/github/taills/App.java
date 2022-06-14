@@ -49,7 +49,7 @@ public class App {
 
         SwingUtilities.invokeLater( () -> {
 
-            DemoPrefs.init( "/flatlaf-demo" );
+            DemoPrefs.init( "/Webb" );
 
             // application specific UI defaults
             FlatLaf.registerCustomDefaultsSource( "com.formdev.flatlaf.demo" );
