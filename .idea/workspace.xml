@@ -6,10 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="58da97d1-2747-4079-bba3-374abadf6f4b" name="Changes" comment="init">
       <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/ShellSetting.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/ShellSetting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/taills/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/Settings.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/Settings.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/ShellManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/ShellManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +45,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "487",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Volumes/Dev/Webb",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -81,7 +85,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655102863495</updated>
-      <workItem from="1655102865735" duration="27297000" />
+      <workItem from="1655102865735" duration="30623000" />
+      <workItem from="1655184462436" duration="6173000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1655165314845</created>
@@ -97,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655180282387</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init">
+      <created>1655181185341</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655181185341</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

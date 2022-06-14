@@ -21,5 +21,6 @@ public class Main {
         tabbedPane1 = new JTabbedPane();
         tabbedPane1.add("Shell",new ShellManager().getMainPanel());
         tabbedPane1.add("Settings",new Settings().getMainPanel());
+        tabbedPane1.add("sssss",new ShellSetting().getMainPanel());
     }
 }

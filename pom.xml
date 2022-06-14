@@ -30,6 +30,12 @@
 <!--            <systemPath>/Volumes/Dev/FlatLaf/flatlaf-demo/build/libs/flatlaf-demo-2.4-SNAPSHOT.jar</systemPath>-->
         </dependency>
 
+        <dependency>
+            <groupId>com.fifesoft</groupId>
+            <artifactId>rsyntaxtextarea</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+
 
 
         <!-- 构建 Intellij IDEA 的窗体设计器需要的依赖 -->
