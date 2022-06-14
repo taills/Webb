@@ -2,7 +2,6 @@ package io.github.taills.webb.ui;
 
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
-import org.fife.ui.rtextarea.RTextArea;
 import org.fife.ui.rtextarea.RTextScrollPane;
 
 import javax.swing.*;
@@ -12,16 +11,15 @@ import java.awt.*;
 public class ShellSetting {
     private JTabbedPane tabbedPane1;
     private JPanel mainPanel;
-    private JTextField textField3;
     private JComboBox comboBox1;
     private JComboBox comboBox2;
     private JComboBox comboBox3;
     private JComboBox comboBox4;
     private JComboBox comboBox5;
-    private JPanel requestPanel;
+    private JPanel requestHeaderPanel;
     private JPanel panelBottom;
-    private JButton button1;
-    private JButton button2;
+    private JButton oKButton;
+    private JButton testButton;
     private RSyntaxTextArea requestTextArea;
     private RTextScrollPane requestTextScrollPane;
 
@@ -35,14 +33,14 @@ public class ShellSetting {
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
-        requestPanel = new JPanel(new BorderLayout());
-        requestPanel.setBorder(new TitledBorder("Header"));
+        requestHeaderPanel = new JPanel(new BorderLayout());
+        requestHeaderPanel.setBorder(new TitledBorder("Header"));
 
-         requestTextArea = new RSyntaxTextArea(20, 60);
+        requestTextArea = new RSyntaxTextArea(20, 60);
         requestTextArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_CSS);
         requestTextArea.setCodeFoldingEnabled(true);
         requestTextScrollPane = new RTextScrollPane(requestTextArea);
-        requestPanel.add(requestTextScrollPane);
+        requestHeaderPanel.add(requestTextScrollPane);
 
 
 

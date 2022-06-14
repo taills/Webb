@@ -1,9 +1,15 @@
 package io.github.taills.webb.ui;
 
 import com.formdev.flatlaf.demo.intellijthemes.IJThemesPanel;
+import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
+import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
+import org.fife.ui.rtextarea.RTextScrollPane;
 
 import javax.swing.*;
+import javax.swing.border.TitledBorder;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
@@ -16,16 +22,33 @@ public class Settings {
     private JPanel themesPanel;
     private JPanel panelThemesList;
     private JPanel panelUISetting;
+    private JPanel requestHeaderPanel;
+    private JTable table1;
+    private JTextField textField1;
+    private JComboBox comboBox1;
+    private JButton addButton;
+    private JTextField textField3;
+    private JTextField textField4;
+    private JPanel authInfoPanel;
+    private RTextScrollPane requestTextScrollPane;
+    private RSyntaxTextArea requestTextArea;
 
     private IJThemesPanel ijThemesPanel;
 
+    private JCheckBox checkBoxRandomRequestParams;
+
+
     public Settings() {
-        panelThemesList.addComponentListener(new ComponentAdapter() {
+
+        comboBox1.addActionListener(new ActionListener() {
             @Override
-            public void componentResized(ComponentEvent e) {
-                super.componentResized(e);
-                //让皮肤选择框的高度随着窗口变化
-                ijThemesPanel.setPreferredSize(new Dimension(ijThemesPanel.getWidth(), e.getComponent().getHeight()));
+            public void actionPerformed(ActionEvent e) {
+                if (e.getActionCommand().equals("comboBoxChanged")){
+                    String proxyType = comboBox1.getSelectedItem().toString();
+                    System.out.println(proxyType);
+                    authInfoPanel.setVisible(proxyType.endsWith("With Auth"));
+                }
+
             }
         });
     }
@@ -40,6 +63,28 @@ public class Settings {
         this.ijThemesPanel = new IJThemesPanel();
         panelThemesList = new JPanel();
         panelThemesList.add(ijThemesPanel);
+        panelThemesList.addComponentListener(new ComponentAdapter() {
+            @Override
+            public void componentResized(ComponentEvent e) {
+                super.componentResized(e);
+                //让皮肤选择框的高度随着窗口变化
+                ijThemesPanel.setPreferredSize(new Dimension(ijThemesPanel.getWidth(), e.getComponent().getHeight()));
+            }
+        });
+
+        requestHeaderPanel = new JPanel(new BorderLayout());
+        requestHeaderPanel.setBorder(new TitledBorder("Global Request Headers"));
+        requestTextArea = new RSyntaxTextArea(20, 60);
+        requestTextArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_CSS);
+        requestTextArea.setCodeFoldingEnabled(true);
+        requestTextScrollPane = new RTextScrollPane(requestTextArea);
+        requestHeaderPanel.add(requestTextScrollPane);
+
+        JPanel panel = new JPanel(new BorderLayout());
+        panel.setBorder(new TitledBorder("Advanced"));
+        checkBoxRandomRequestParams = new JCheckBox("Append Random Params");
+        panel.add(checkBoxRandomRequestParams);
+        requestHeaderPanel.add(panel, BorderLayout.SOUTH);
 
     }
 }
