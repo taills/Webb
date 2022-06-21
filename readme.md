@@ -2,6 +2,8 @@
 
 取名自詹姆斯·韦伯空间望远镜（英语：James Webb Space Telescope, JWST）中的 Webb，在此程序中也释义为 Web Beacon
 
+基础的东西来源于[哥斯拉](https://github.com/BeichenDream/Godzilla)，用着不太顺手，所以继续造轮子...
+
 ## 开发环境
 
 - jdk 1.8.0_322
