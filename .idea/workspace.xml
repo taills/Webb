@@ -5,13 +5,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58da97d1-2747-4079-bba3-374abadf6f4b" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/httpProxy/server/ByteUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/httpProxy/server/CertPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/httpProxy/server/CertUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/httpProxy/server/HttpCookie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/httpProxy/server/core/HttpProxyHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/httpProxy/server/core/HttpProxyServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/httpProxy/server/request/HttpRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/httpProxy/server/request/HttpRequestHeader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/httpProxy/server/request/HttpRequestParameter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/httpProxy/server/response/HttpResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/httpProxy/server/response/HttpResponseHeader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/httpProxy/server/response/HttpResponseStatus.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/ApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/CoreClassLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/DbHelper/CacheDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/DbHelper/DBUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/DbHelper/KeyValueDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/DbHelper/MainDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/Encoding.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/Shell/Cryption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/Shell/Payload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/Shell/Plugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/Shell/ShellEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/Shell/cache/CacheDb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/Shell/cache/CachePayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/Shell/cache/PayloadCacheHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/Shell/cache/UpdatePayloadCacheHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/Shell/cache/UsePayloadCacheHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/annotation/CryptionAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/annotation/PayloadAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/annotation/PluginAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/component/WebbRTextArea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/component/annotation/ButtonToMenuItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/util/InvalidKeyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/util/OpenC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/util/ParameterInputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/util/ParameterOutputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/util/RC4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/util/RightClickMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/util/StringEscapeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/util/TemplateEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/util/UiFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/util/automaticBindClick.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/util/functions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/util/http/Http.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/util/http/HttpResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/util/http/Parameter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/util/http/ReqParameter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/github/taills/webb/core/DbHelper/MainDatabaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/taills/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/Settings.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/Settings.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/Settings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/ShellSetting.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/ShellSetting.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/ShellSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/ShellSetting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/ShellManager.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/taills/webb/ui/ShellManager.form" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +75,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -43,22 +98,39 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "310",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "374",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Volumes/Dev/Webb",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
+    "last_opened_file_path": "/Volumes/Dev/Webb/src/main/java",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Facets",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "File.Encoding"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core" />
+      <recent name="$PROJECT_DIR$/src/main/java/io/github/taills/webb/core/Shell" />
+      <recent name="$PROJECT_DIR$/src/main/java/io/github/taills/webb" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="io.github.taills.webb.core.DbHelper" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.github.taills.webb.ui.component.annotation" />
       <recent name="io.github.taills.webb.ui" />
+      <recent name="io.github.taills.webb.core" />
+      <recent name="io.github.taills.webb.core.Shell" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MainDatabase">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.github.taills.App" />
       <module name="Webb" />
@@ -72,8 +144,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainDatabase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.taills.webb.core.DbHelper.MainDatabase" />
+      <module name="Webb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.taills.webb.core.DbHelper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Webb [test]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="test" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.MainDatabase" />
+      <item itemvalue="Application.App" />
+      <item itemvalue="Maven.Webb [test]" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainDatabase" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -87,7 +203,12 @@
       <option name="presentableId" value="Default" />
       <updated>1655102863495</updated>
       <workItem from="1655102865735" duration="30623000" />
-      <workItem from="1655184462436" duration="13740000" />
+      <workItem from="1655184462436" duration="14068000" />
+      <workItem from="1655212890588" duration="7513000" />
+      <workItem from="1655349351837" duration="8109000" />
+      <workItem from="1655456371219" duration="6071000" />
+      <workItem from="1655693043201" duration="7887000" />
+      <workItem from="1655793042270" duration="2994000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1655165314845</created>
@@ -124,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655192109816</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="init">
+      <created>1655199653751</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655199653751</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
