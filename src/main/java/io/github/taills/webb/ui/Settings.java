@@ -7,6 +7,7 @@ import org.fife.ui.rtextarea.RTextScrollPane;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -23,7 +24,7 @@ public class Settings {
     private JPanel panelThemesList;
     private JPanel panelUISetting;
     private JPanel requestHeaderPanel;
-    private JTable table1;
+    private JTable tableProxy;
     private JTextField textField1;
     private JComboBox comboBox1;
     private JButton addButton;
@@ -37,13 +38,15 @@ public class Settings {
 
     private JCheckBox checkBoxRandomRequestParams;
 
+    private JCheckBox checkBoxRandomProxy;
+
 
     public Settings() {
 
         comboBox1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (e.getActionCommand().equals("comboBoxChanged")){
+                if (e.getActionCommand().equals("comboBoxChanged")) {
                     String proxyType = comboBox1.getSelectedItem().toString();
                     System.out.println(proxyType);
                     authInfoPanel.setVisible(proxyType.endsWith("With Auth"));
@@ -80,11 +83,30 @@ public class Settings {
         requestTextScrollPane = new RTextScrollPane(requestTextArea);
         requestHeaderPanel.add(requestTextScrollPane);
 
-        JPanel panel = new JPanel(new BorderLayout());
+        JPanel panel = new JPanel(new GridLayout());
         panel.setBorder(new TitledBorder("Advanced"));
+
+        checkBoxRandomProxy = new JCheckBox("Using Random Proxy");
+        panel.add(checkBoxRandomProxy);
+
+
         checkBoxRandomRequestParams = new JCheckBox("Append Random Params");
         panel.add(checkBoxRandomRequestParams);
-        requestHeaderPanel.add(panel, BorderLayout.SOUTH);
+
+
+        requestHeaderPanel.add(panel, BorderLayout.AFTER_LAST_LINE);
+
+
+        tableProxy = new JTable();
+
+        DefaultTableModel tableModelProxy = new DefaultTableModel() {
+
+        };
+        tableModelProxy.setColumnIdentifiers(new String[]{"Type", "Host:Port", "Username", "Password", "State"});
+        tableModelProxy.addRow(new String[]{"HTTP", "127.0.0.1:8080", "user", "1234","unknown"});
+        tableModelProxy.addRow(new String[]{"Socks5", "127.0.0.1:8080", "user", "1234","failed"});
+        tableModelProxy.addRow(new String[]{"HTTP", "127.0.0.1:8080", "user", "1234","successful"});
+        tableProxy.setModel(tableModelProxy);
 
     }
 }

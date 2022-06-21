@@ -63,7 +63,7 @@ public class App {
 
             // create frame
             Main mainPanel = new Main();
-            final JFrame mainJFrame = new JFrame("\u5468\u516d\u665a\u4e0a10\u70b9\uff0c\u79cb\u540d\u5c71\u9876\u7b49\u4f60\u3002");
+            final JFrame mainJFrame = new JFrame("Lagrange Point Guardian");
             mainJFrame.add(mainPanel.getMainPanel());
             mainJFrame.setDefaultCloseOperation(3);
             int width = (int) (Toolkit.getDefaultToolkit().getScreenSize().getWidth() * 0.8);

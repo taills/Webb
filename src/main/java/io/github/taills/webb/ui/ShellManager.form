@@ -32,7 +32,8 @@
                   </grid>
                 </constraints>
                 <properties>
-                  <text value="你好世界"/>
+                  <text value=""/>
+                  <toolTipText value="Search Tag"/>
                 </properties>
               </component>
               <scrollpane id="2883c" binding="scrollPaneTags">
