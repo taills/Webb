@@ -1,7 +1,5 @@
 package io.github.taills.webb.util.http;
 
-import com.httpProxy.server.response.HttpResponseHeader;
-import com.httpProxy.server.response.HttpResponseStatus;
 
 import io.github.taills.webb.core.ApplicationContext;
 import io.github.taills.webb.core.Shell.ShellEntity;
@@ -11,7 +9,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpCookie;
 import java.net.HttpURLConnection;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -127,24 +124,5 @@ public class HttpResponse {
       }
 
       return bos.toByteArray();
-   }
-
-   public com.httpProxy.server.response.HttpResponse parseHttpResponse() {
-      com.httpProxy.server.response.HttpResponse httpResponse = new com.httpProxy.server.response.HttpResponse(new HttpResponseStatus(this.responseCode));
-      httpResponse.setResponseData(this.result);
-      HttpResponseHeader responseHeader = httpResponse.getHttpResponseHeader();
-      Iterator headerKeys = this.headerMap.keySet().iterator();
-
-      while(headerKeys.hasNext()) {
-         String keyString = (String)headerKeys.next();
-         List<String> headList = (List)this.headerMap.get(keyString);
-         if (headList != null) {
-            headList.parallelStream().forEach((v) -> {
-               responseHeader.addHeader(keyString, v);
-            });
-         }
-      }
-
-      return httpResponse;
    }
 }
